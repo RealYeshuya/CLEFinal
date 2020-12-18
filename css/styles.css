@@ -1,0 +1,1141 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+           
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.container_svg{
+    font-family: "Staatliches";
+    margin-top: -15px;
+    margin-left: -10px;
+    width: 100%;
+    position: relative;
+    background-color: #202020;
+}
+
+.content_svg{
+    width: 93%;
+    min-height: 500px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: #202020;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: white;
+    color: #202020;
+    padding: 16px;
+    font-size: 25px;
+    border: none;
+    width: 250px;
+    font-family: "Staatliches";
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 150px;
+    margin-left: 5px;
+    font-family: "Staatliches";
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #202020;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Staatliches";
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #E00000;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #E00000; color: white;}
+/*----- HEADER -----*/
+    #header {
+        height: 630px;
+        width: 100%;
+        padding-top: 0;
+        margin: 0;
+        background-color: #202020;
+        font-family: "Staatliches";
+        text-align: center;
+        font-size: 78px;
+    }
+
+    .class{
+        width: 500px;
+        position: absolute;
+        color: white;
+        font-family: "Staatliches";
+        letter-spacing: 0.15em;
+        font-size: 30px;
+        top: 50px;
+        left: 533px;
+    }
+                
+    /*----- LOGO -----*/            
+        #logo {                
+            color: 	#E00000 ;     
+            font-size: 600px;        
+            font-family: 'Josefin Sans', sans-serif;       
+            position: absolute;        
+            top: 150px;        
+            left: 850px;
+        }
+
+        #circleLogo {
+            width: 177px;
+            height: 177px;
+            background-color: #202020;
+            position: absolute;
+            top: 25%;
+            left: 30%;
+            border-radius: 50%;
+            z-index: 1;
+        }
+                        
+        #eyeball {
+            width: 140px;
+            height: 140px;
+            background-color: #E00000;
+            position: absolute;
+            top: 11%;
+            left: 11%;
+            border-radius: 50%;
+            animation: blink 5s infinite;
+            z-index: 1;
+        }
+
+        #eye {
+            width: 94px;
+            height: 94px;
+            background: white;
+            border-radius: 0% 100%;
+            position: absolute;
+            top: 17%;
+            left: 17%;
+            transform: rotate(45deg);
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                transform: scale(1, .05);
+            }
+            5%,
+            95% {
+                transform: scale(1, 1);
+            }
+        }
+    /*----- END LOGO -----*/
+    .hi{
+        width: 1000px;
+        position: absolute;
+        color: white;
+        font-family: "Staatliches";
+        letter-spacing: 0.15em;
+        font-size: 120px;
+        top: 180px;
+        left: -50px;
+    }
+
+    .fname{
+        width: 500px;
+        position: absolute;
+        color: white;
+        font-family: "Staatliches";
+        width: 100%;
+        letter-spacing: 0.25em;
+        font-size: 150px;
+        top: 270px;
+        left: -300px;
+    }
+
+    .lname{
+        width: 500px;
+        position: absolute;
+        color: white;
+        font-family: "Staatliches";
+        letter-spacing: 0.15em;
+        font-size: 120px;
+        top: 375px;
+        left: 280px;
+    }
+
+    .greet{
+        width: 1000px;
+        position: absolute;
+        color: white;
+        font-family: "Staatliches";
+        letter-spacing: 0.15em;
+        font-size: 60px;
+        top: 500px;
+        left: 100px;
+    }
+
+    .topnav{
+        width: 100%;
+        height: 100px;
+        background-color: #202020;
+        box-shadow: 0 10px 10px 2px #232323;
+        position: fixed;
+        top: -10px;
+        z-index: 100;
+    }
+                
+    ul { 
+        padding: 0; 
+        list-style: none; 
+        display: table;
+        width: 300px;
+        text-align: center;
+        margin-top: 4px;
+        margin-left: 20px;
+    }
+
+    li { 
+        display: table-cell; 
+        position: relative; 
+        padding: 20px 0;
+    }
+                
+    .topnav a {
+        color: #fff;
+        font-size: 22px;
+        font-family: "Staatliches";
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        display: inline-block;
+        padding: 15px 30px;
+        position: relative;
+    }
+                
+    .topnav a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    .topnav a:hover:after { 
+        width: 100%; 
+        left: 0; 
+    }
+                
+    @media screen and (max-height: 300px) {
+        ul {
+            margin-top: 40px;
+        }
+    }  
+/*----- END OF HEADER -----*/
+
+/*----- CONTENT -----*/
+    #content{
+        min-height: 2700px;
+        width: 100%;
+        padding-top: 0;
+        margin: 0;
+        background-color: #202020;
+        font-family: "Staatliches";
+        text-align: center;
+        font-size: 78px;
+    }
+
+    .name{
+        font-family: "Josefin Sans";
+        font-size: 60px;
+        color: white;
+        position: absolute;
+        float: right;
+        right: 70px;
+        top: 50px;
+
+    }
+
+    .topic{
+        font-family: "Josefin Sans";
+        font-size: 30px;
+        color: white;
+        position: absolute;
+        float: right;
+        right: 70px;
+        top: 120px; 
+    }
+
+    /*----- CSS ----- */
+
+        #css{
+            width: 1100px;
+            height: 800px;
+            position: relative;
+            background-color: #303030;
+            border-radius: 50px;
+            margin: auto;
+            top: 100px;
+            transition: box-shadow .3s;
+            overflow: hidden;
+        }
+
+        #sample_containercss{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            margin-left: -350px;
+        }
+
+        #css:hover {
+            box-shadow: 25px 25px 10px rgba(85, 82, 82, 0.2); 
+            animation: up 2s infinite;
+        }
+        
+        /* Cipher */
+        
+        #cipher{
+            width: 210px;
+            height: 160px;
+            position: absolute;
+            margin-top: -150px;
+            margin-left: 230px;
+            background-color: #555;
+            border-radius: 10%;
+            z-index:2
+        }
+        
+        #bottom{
+            width: 270px;
+            height: 30px;
+            position: absolute;
+            margin-top: 105px;
+            margin-left: -29px;
+            background-color: #000000;
+        }
+        
+        #top{
+            width: 50px;
+            height: 60px;
+            position: absolute;
+            margin-top: -60px;
+            margin-left: 80px;
+            background-color: #000000;
+            z-index: 1;
+        }
+        
+        #top hr{
+            width: 20px;
+            background-color: white;
+            margin-top: 18px;
+            margin-left: 15px;
+        }
+        
+        #screen{
+            width: 100px;
+            height: 40px;
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 57px;
+            background-color: white;
+            font-family: 'Josefin Sans', sans-serif;
+            z-index: 2;
+        }
+        
+        #side {
+            width: 20px;
+            height: 85px;
+            position: absolute;
+            margin-top: 30px;
+            background-color: #777777;
+        }
+        
+        #side:nth-child(1){
+            margin-left: -20px;
+        }
+        
+        #side:nth-child(2){
+            margin-left: 210px;
+        }
+        
+        #plug{
+            width: 30px;
+            height: 30px;
+            background-color: #333333;
+            border-radius: 50%;
+            margin-top: 60px;
+            margin-left: 20px;
+        }
+        
+        /* End of Cipher */
+        
+        /* Post */
+        
+        #base{
+            width: 150px;
+            height: 160px;
+            background-color: #555;
+            position: absolute;
+            margin-top: 490px;
+            margin-left: -400px;
+            z-index: 3;
+        }
+        
+        #pole{
+            height: 560px;
+            width: 30px;
+            background-color: #522617;
+            position: absolute;
+            margin-top: -560px;
+            margin-left: 60px;
+            animation: shake 0.5s infinite;
+        }
+        
+        #line{
+            width: 650px; 
+            height: 200px;  
+            position:absolute;
+            border: solid 3px #000;
+            border-color: white transparent transparent transparent;
+            border-radius: 50%/100px 100px 0 0;
+            transform: rotate(90deg);
+            margin-left: -350px;
+            margin-top: 180px;
+            z-index: -1;
+        }
+        
+        @keyframes shake {
+            10%, 90% {
+            transform: translate3d(-1px, 0, 0);
+            }
+            
+            20%, 80% {
+            transform: translate3d(1px, 0, 0);
+            }
+        
+            30%, 50%, 70% {
+            transform: translate3d(-2px, 0, 0);
+            }
+        
+            40%, 60% {
+            transform: translate3d(3px, 0, 0);
+            }
+        }
+        
+        /* End of Post */
+        
+        /* Box */
+        
+        #box {
+            width: 350px;
+            height: 350px;
+            background: #83502e;
+            border-radius: 2%;
+            z-index: 5;
+            margin-top: 300px;
+            margin-left: 240px;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        
+        #box h1{
+            font-size: 450px;
+            margin: 0 auto;
+            position: absolute;
+            margin-top: -15px;
+            margin-left: -15px;
+            color: #83502e;
+        }
+        
+        #in_sq {
+            width: 300px;
+            height: 300px;
+            margin-top: 25px;
+            margin-left: 25px;
+            background: #bd7e4a;
+            border-radius: 2%;
+            z-index: 1;
+        }
+        
+        /* End of box */
+
+        /* Bush Right */
+        #borderright{
+            width: 0;
+            height: 0;
+            border-bottom: 500px solid black;
+            border-left: 500px solid transparent;
+            position: absolute;
+            margin-top: 157px;
+            margin-left: 950px;
+            z-index: 10;
+        }
+        
+        #bushright{
+            position: absolute;
+            background-color: black;
+            border-radius: 50%;
+            animation: waveright 5s infinite;
+        }
+
+        #bushright:nth-child(1){
+            width: 150px;
+            height: 150px;
+            margin-left: -90px;
+            margin-top: -40px;
+        }
+
+        #bushright:nth-child(2){
+            width: 130px;
+            height: 130px;
+            margin-top: 15px;
+            margin-left: -180px;
+        }
+
+        #bushright:nth-child(3){
+            width: 200px;
+            height: 200px;
+            margin-top: 100px;
+            margin-left: -280px;
+        }
+
+        #bushright:nth-child(4){
+            width: 150px;
+            height: 150px;
+            margin-top: 220px;
+            margin-left: -360px;
+        }
+
+        #bushright:nth-child(5){
+            width: 140px;
+            height: 140px;
+            margin-top: 280px;
+            margin-left: -440px;
+        }
+
+        #bushright:nth-child(6){
+            width: 180px;
+            height: 180px;
+            margin-top: 320px;
+            margin-left: -570px;
+        }
+        
+        @keyframes waveright {
+            0%, 100%{
+                transform: skew(0deg);
+            }
+
+            25%{
+                transform: skew(-5deg);
+            }
+
+            75%{
+                transform: skew(5deg)
+            }
+        }
+
+        /* End of Bush Right */
+
+    /*----- END CSS -----*/
+
+    /*----- SVG -----*/
+    #svg{
+        width: 1100px;
+        height: 800px;
+        position: relative;
+        background-color: #303030;
+        border-radius: 50px;
+        margin: auto;
+        top: 50px;
+        transition: box-shadow .3s;
+    }
+
+    #sample_containersvg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+        margin-left: -350px;
+    }
+
+    #svg:hover {
+        box-shadow: 25px 25px 10px rgba(85, 82, 82, 0.2); 
+        animation: up 2s infinite;
+    }
+
+     /*----- END SVG -----*/
+    #canvas{
+        width: 1100px;
+        height: 800px;
+        position: relative;
+        background-color: #303030;
+        border-radius: 50px;
+        margin: auto;
+        top: 50px;
+        transition: box-shadow .3s;
+    }
+
+    #canvas:hover {
+        box-shadow: 25px 25px 10px rgba(85, 82, 82, 0.2); 
+        animation: up 2s infinite;
+    }
+
+    @keyframes up{
+        0%{transform: translate(0, -5px);}
+        50%{transform: translate(0, -10px);}
+        100%{transform: translate(0, -5px);}
+    }
+
+/*----- END OF CONTENT -----*/
+
+/*----- ABOUT -----*/
+#about {
+    height: px;
+    width: 100%;
+    padding-top: 0;
+    margin: 0;
+    background-color: #202020;
+    font-family: "Staatliches";
+    text-align: center;
+    font-size: 78px;
+    color: white;
+    margin-top: 100px;
+}
+
+.lefta{
+    height: 690px;
+    width: 42%;
+    background-color: white;
+    position: relative;
+}
+
+.containerabout{
+    height: 690px;
+    width: 58%;
+    float:right;
+    background-color: #202020;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerabout::-webkit-scrollbar {
+    display: none;
+}
+
+#h1_about{
+    color: #202020;
+    font-family: "Josefin Sans";
+    font-size: 150px;
+    top: 225px;
+    position: relative;
+}
+
+#h6_about{
+    color:white;
+    font-family: "Josefin Sans";
+    font-size: 28px;
+    position: relative;
+}
+
+#paragraph{
+    width: 80%;
+    min-height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 80px;
+    margin-top: -20px;
+
+}
+
+/*----- END OF ABOUT -----*/
+
+.socmed{
+    top: 15px;
+    left: 1280px;
+    position: fixed;
+    z-index: 10000;
+}
+
+/* Facebook Logo */
+
+.logo-facebook-small {
+    background-color: #202020;
+    border: 2px solid white;
+    width: 52px;
+    height: 51px;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.logo-facebook-small div {
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.logo-facebook-small div[class*=-none] {
+    background-color: #202020;
+}
+
+.logo-facebook-small .longpiece {
+    height: 45.06666666666667px;
+    border: 8.146666666666667px #ffffff solid;
+    -webkit-border-radius: 9.533333333333333px 0 0 0;
+    -moz-border-radius: 9.533333333333333px 0 0 0;
+    -ms-border-radius: 9.533333333333333px 0 0 0;
+    -o-border-radius: 9.533333333333333px 0 0 0;
+    border-radius: 9.533333333333333px 0 0 0;
+    left: 27.733333333333334px;
+    top: 7.800000000000001px;
+}
+
+.logo-facebook-small .longpiece-none {
+    width: 9.533333333333333px;
+    height: 36.4px;
+    -webkit-border-radius: 3.64px 0 0 0;
+    -moz-border-radius: 3.64px 0 0 0;
+    -ms-border-radius: 3.64px 0 0 0;
+    -o-border-radius: 3.64px 0 0 0;
+    border-radius: 3.64px 0 0 0;
+    left: 35.70666666666667px;
+    top: 15.08px;
+}
+
+.logo-facebook-small .shortpiece {
+    width: 22.533333333333335px;
+    height: 7.453333333333333px;
+    left: 20.973333333333333px;
+    top: 24.266666666666666px;
+}
+
+.logo-facebook-small .shortpiece-none {
+    width: 1.7333333333333334px;
+    height: 8.666666666666668px;
+    left: 42.986666666666665px;
+    top: 23.92px;
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    -o-transform: rotate(8deg);
+    transform: rotate(8deg);
+}
+
+div.logo-facebook-small:hover{
+    animation: up 2s infinite;
+}
+
+/* End of Facebook Logo */
+
+/* Twitter Logo */
+
+.logo-twitter-small {
+    background-color: #202020;
+    border: 2px solid white;
+    width: 52px;
+    height: 51px;
+    position: absolute;
+    overflow: hidden;
+    margin-left: 77px;
+    margin-top: -55px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.logo-twitter-small div {
+    position: absolute;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    background-color: #ffffff;
+}
+
+.logo-twitter-small div[class*=-none] {
+    background-color: #202020;
+}
+
+.logo-twitter-small .body {
+    top: 2.7733333333333334px;
+    left: 2.6px;
+    width: 35.70666666666667px;
+    height: 35.70666666666667px;
+}
+
+.logo-twitter-small .body-none {
+    top: 9.706666666666667px;
+    left: -1.04px;
+    width: 26px;
+    height: 26px;
+}
+
+.logo-twitter-small .wing-top {
+    top: 11.266666666666667px;
+    left: 11.786666666666667px;
+    width: 15.253333333333334px;
+    height: 13.346666666666668px;
+}
+
+.logo-twitter-small .wing-top-none {
+    top: -13.346666666666668px;
+    left: 9.186666666666667px;
+    width: 34.66666666666667px;
+    height: 34.66666666666667px;
+}
+
+.logo-twitter-small .wing-middle {
+    top: 16.46666666666667px;
+    left: 11.786666666666667px;
+    width: 15.253333333333334px;
+    height: 12.653333333333334px;
+}
+
+.logo-twitter-small .wing-middle-none {
+    top: -4.333333333333334px;
+    left: 3.466666666666667px;
+    width: 27.733333333333334px;
+    height: 27.733333333333334px;
+}
+
+.logo-twitter-small .wing-bottom {
+    top: 20.973333333333333px;
+    left: 13.866666666666667px;
+    width: 12.133333333333333px;
+    height: 12.133333333333333px;
+}
+
+.logo-twitter-small .wing-bottom-none {
+    top: 18.373333333333335px;
+    left: 10.053333333333335px;
+    width: 10.4px;
+    height: 10.4px;
+}
+
+.logo-twitter-small .beak-bottom {
+    width: 17.333333333333336px;
+    height: 17.333333333333336px;
+    left: 25.133333333333333px;
+    top: 3.64px;
+}
+
+.logo-twitter-small .beak-bottom-none {
+    width: 19.933333333333334px;
+    height: 19.933333333333334px;
+    left: 26.866666666666667px;
+    top: -2.4266666666666667px;
+}
+
+.logo-twitter-small .beak-top {
+    width: 11.266666666666667px;
+    height: 11.266666666666667px;
+    left: 29.46666666666667px;
+    top: 6.76px;
+}
+
+.logo-twitter-small .beak-top-none {
+    width: 19.933333333333334px;
+    height: 19.933333333333334px;
+    left: 24.96px;
+    top: -4.333333333333334px;
+}
+
+.logo-twitter-small .head {
+    width: 12.48px;
+    height: 12.48px;
+    left: 25.653333333333336px;
+    top: 13.52px;
+}
+
+div.logo-twitter-small:hover{
+    animation: up 2s infinite;
+}
+
+/* End of Twitter Logo */
+
+/* Github Logo */
+
+.logo-github-small {
+    background-color: #202020;
+    border: 2px solid white;
+    width: 53px;
+    height: 52px;
+    position: absolute;
+    overflow: hidden;
+    margin-left: 150px;
+    margin-top: -56px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.logo-github-small div {
+    position: absolute;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    background-color: #ffffff;
+}
+
+.logo-github-small div[class*=-none] {
+    background-color: #202020;
+}
+
+.logo-github-small .head {
+    width: 32.586666666666666px;
+    height: 24.266666666666666px;
+    left: 9.706666666666667px;
+    top: 13px;
+}
+
+.logo-github-small .chin-left {
+    width: 21.666666666666668px;
+    height: 23.573333333333334px;
+    left: 9.36px;
+    top: 14.213333333333335px;
+}
+
+.logo-github-small .chin-right {
+    width: 21.666666666666668px;
+    height: 23.573333333333334px;
+    left: 20.973333333333333px;
+    top: 14.213333333333335px;
+}
+
+.logo-github-small .ear-one-left {
+    width: 12.133333333333333px;
+    height: 15.600000000000001px;
+    left: 11.613333333333333px;
+    top: 7.28px;
+}
+
+.logo-github-small .ear-one-right {
+    width: 7.973333333333334px;
+    height: 2.08px;
+    left: 11.96px;
+    top: 11.96px;
+    -webkit-transform: rotate(23deg);
+    -moz-transform: rotate(23deg);
+    -ms-transform: rotate(23deg);
+    -o-transform: rotate(23deg);
+    transform: rotate(23deg);
+}
+
+.logo-github-small .ear-one-none {
+    width: 17.68px;
+    height: 7.800000000000001px;
+    left: 12.133333333333333px;
+    top: 6.413333333333334px;
+}
+
+.logo-github-small .ear-two-left {
+    width: 7.973333333333334px;
+    height: 2.08px;
+    left: 32.06666666666667px;
+    top: 11.96px;
+    -webkit-transform: rotate(-23deg);
+    -moz-transform: rotate(-23deg);
+    -ms-transform: rotate(-23deg);
+    -o-transform: rotate(-23deg);
+    transform: rotate(-23deg);
+}
+
+.logo-github-small .ear-two-right {
+    width: 12.133333333333333px;
+    height: 15.600000000000001px;
+    left: 28.253333333333334px;
+    top: 7.28px;
+}
+
+.logo-github-small .ear-two-none {
+    width: 17.68px;
+    height: 7.800000000000001px;
+    left: 22.186666666666667px;
+    top: 6.413333333333334px;
+}
+
+.logo-github-small .body-left {
+    -webkit-border-radius: 100% 100% 0 0;
+    -moz-border-radius: 100% 100% 0 0;
+    -ms-border-radius: 100% 100% 0 0;
+    -o-border-radius: 100% 100% 0 0;
+    border-radius: 100% 100% 0 0;
+    width: 9.706666666666667px;
+    height: 15.253333333333334px;
+    left: 19.413333333333334px;
+    top: 36.22666666666667px;
+}
+
+.logo-github-small .body-left-none {
+    width: 1.3866666666666667px;
+    height: 6.933333333333334px;
+    left: 18.026666666666667px;
+    top: 44.02666666666667px;
+    -webkit-border-radius: 0.6933333333333334px 0 0.6933333333333334px 0;
+    -moz-border-radius: 0.6933333333333334px 0 0.6933333333333334px 0;
+    -ms-border-radius: 0.6933333333333334px 0 0.6933333333333334px 0;
+    -o-border-radius: 0.6933333333333334px 0 0.6933333333333334px 0;
+    border-radius: 0.6933333333333334px 0 0.6933333333333334px 0;
+}
+
+.logo-github-small .body-right {
+    -webkit-border-radius: 100% 100% 0 0;
+    -moz-border-radius: 100% 100% 0 0;
+    -ms-border-radius: 100% 100% 0 0;
+    -o-border-radius: 100% 100% 0 0;
+    border-radius: 100% 100% 0 0;
+    width: 9.706666666666667px;
+    height: 15.253333333333334px;
+    left: 22.880000000000003px;
+    top: 36.22666666666667px;
+}
+
+.logo-github-small .body-right-none {
+    width: 1.3866666666666667px;
+    height: 6.933333333333334px;
+    left: 32.586666666666666px;
+    top: 44.02666666666667px;
+    -webkit-border-radius: 0 0.6933333333333334px 0 0.6933333333333334px;
+    -moz-border-radius: 0 0.6933333333333334px 0 0.6933333333333334px;
+    -ms-border-radius: 0 0.6933333333333334px 0 0.6933333333333334px;
+    -o-border-radius: 0 0.6933333333333334px 0 0.6933333333333334px;
+    border-radius: 0 0.6933333333333334px 0 0.6933333333333334px;
+}
+
+.logo-github-small .body-bottom {
+    width: 15.253333333333334px;
+    height: 3.12px;
+    left: 18.373333333333335px;
+    top: 49.4px;
+}
+
+.logo-github-small .tail-end {
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+    width: 2.7733333333333334px;
+    height: 6.066666666666666px;
+    left: 9.186666666666667px;
+    top: 36.57333333333334px;
+}
+
+.logo-github-small .tail-body {
+    width: 13.52px;
+    height: 8.32px;
+    left: 10.92px;
+    top: 36.92px;
+}
+
+.logo-github-small .tail-body-spots {
+    border: 0.8666666666666667px #202020 dotted;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 0 0 25.133333333333333px 22.533333333333335px;
+    -moz-border-radius: 0 0 25.133333333333333px 22.533333333333335px;
+    -ms-border-radius: 0 0 25.133333333333333px 22.533333333333335px;
+    -o-border-radius: 0 0 25.133333333333333px 22.533333333333335px;
+    border-radius: 0 0 25.133333333333333px 22.533333333333335px;
+    width: 17.333333333333336px;
+    height: 10.226666666666667px;
+    left: 9.013333333333334px;
+    top: 32.93333333333334px;
+}
+
+.logo-github-small .tail-end-none {
+    -webkit-transform: rotate(-24deg);
+    -moz-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    -o-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+    width: 2.9466666666666668px;
+    height: 8.32px;
+    left: 7.973333333333334px;
+    top: 37.78666666666667px;
+} 
+
+.logo-github-small .tail-body-none {
+    width: 11.613333333333333px;
+    height: 8.32px;
+    left: 11.613333333333333px;
+    top: 33.626666666666665px;
+} 
+
+.logo-github-small .tail-tip {
+    -webkit-transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    -o-transform: rotate(12deg);
+    transform: rotate(12deg);
+    width: 3.466666666666667px;
+    height: 1.56px;
+    left: 7.106666666666667px;
+    top: 36.74666666666667px;
+}
+
+div.logo-github-small:hover{
+    animation: up 2s infinite;
+}
+
+/* End of Github Logo */
+
